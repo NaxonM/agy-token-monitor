@@ -41,3 +41,6 @@ Homepage = "https://github.com/NaxonM/agy-token-monitor"
 
 [project.scripts]
 agy-token-monitor = "server:main"
+
+[tool.setuptools]
+py-modules = ["server"]

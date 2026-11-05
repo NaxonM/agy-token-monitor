@@ -59,9 +59,16 @@ Autonomous coding agents can rapidly burn thousands of tokens through iterative 
 
 ## 🚀 Quickstart
 
-### 1. Standalone CLI Usage
+### 1. Clone & Standalone CLI Usage
 
-Verify your active Antigravity quota straight from your terminal:
+Clone the repository:
+
+```bash
+git clone https://github.com/NaxonM/agy-token-monitor.git
+cd agy-token-monitor
+```
+
+Verify your active Antigravity quota straight from your terminal (zero pip dependencies required):
 
 ```bash
 # Print formatted real-time dashboard
@@ -72,6 +79,15 @@ python server.py --json
 
 # Print active conversation token consumption
 python server.py --session
+```
+
+*(Optional)* Install into your Python environment for a direct `agy-token-monitor` CLI command:
+
+```bash
+pip install -e .
+
+# Now callable from any directory
+agy-token-monitor --check
 ```
 
 #### Terminal Output Preview:
@@ -103,6 +119,7 @@ python server.py --session
 
 Add `agy-token-monitor` to your global Antigravity config (`~/.gemini/config/mcp_config.json`):
 
+#### Option A: Direct Python Script
 ```json
 {
   "mcpServers": {
@@ -120,6 +137,23 @@ Add `agy-token-monitor` to your global Antigravity config (`~/.gemini/config/mcp
 ```
 
 > **Note:** Replace `<path-to-repo>` with the absolute path to where you cloned this repository (e.g. `C:/path/to/agy-token-monitor/server.py` on Windows or `/home/username/agy-token-monitor/server.py` on macOS/Linux).
+
+#### Option B: Installed CLI Command (`pip install -e .`)
+```json
+{
+  "mcpServers": {
+    "agy-token-monitor": {
+      "command": "agy-token-monitor",
+      "args": [
+        "--mcp"
+      ],
+      "env": {
+        "PYTHONUNBUFFERED": "1"
+      }
+    }
+  }
+}
+```
 
 ---
 
