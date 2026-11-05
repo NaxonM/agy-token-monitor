@@ -68,6 +68,8 @@ git clone https://github.com/NaxonM/agy-token-monitor.git
 cd agy-token-monitor
 ```
 
+> 🤖 **One-Prompt Setup via Agent:** You can point your AI coding assistant directly at [`AGENTS.md`](AGENTS.md) (*"Configure agy-token-monitor according to AGENTS.md"*), and it will automatically register the MCP server in your `mcp_config.json` and install the companion skill for you.
+
 Verify your active Antigravity quota straight from your terminal (zero pip dependencies required):
 
 ```bash
