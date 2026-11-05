@@ -1,0 +1,43 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "agy-token-monitor"
+version = "1.2.0"
+description = "Antigravity Dual-Window Token & Quota Monitor (MCP Server + CLI)"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [
+    { name = "Antigravity Security & Tooling" }
+]
+keywords = [
+    "antigravity",
+    "mcp",
+    "model-context-protocol",
+    "gemini",
+    "claude",
+    "quota-monitor",
+    "token-tracker"
+]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Software Development :: Build Tools",
+    "Topic :: System :: Monitoring"
+]
+dependencies = []
+
+[project.urls]
+Homepage = "https://github.com/NaxonM/agy-token-monitor"
+
+[project.scripts]
+agy-token-monitor = "server:main"
