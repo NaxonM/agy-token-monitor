@@ -16,10 +16,15 @@ keywords = [
     "antigravity",
     "mcp",
     "model-context-protocol",
+    "mcp-server",
     "gemini",
     "claude",
-    "quota-monitor",
-    "token-tracker"
+    "ai-agents",
+    "quota-monitoring",
+    "token-tracker",
+    "rate-limit",
+    "telemetry",
+    "developer-tools"
 ]
 classifiers = [
     "Development Status :: 5 - Production/Stable",
